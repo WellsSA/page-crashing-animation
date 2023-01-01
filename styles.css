@@ -61,3 +61,34 @@ aside {
     background-image: var(--explosion-img);
   }
 }
+
+body {
+  animation: break 6s ease-in-out forwards;
+}
+
+@keyframes break {
+  50% {
+    rotate: 0deg;
+    color: white;
+  }
+  52% {
+    rotate: 1deg;
+    color: red;
+  }
+  54% {
+    rotate: -1deg;
+  }
+  56% {
+    rotate: 2deg;
+  }
+  58% {
+    rotate: -2deg;
+  }
+  60%{
+    rotate: 6deg;
+    color: white;
+  }
+  100% {
+    rotate: 6deg;
+  }
+}
