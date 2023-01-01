@@ -1,6 +1,6 @@
-#root {
-  --meteor-img: url('assets/images/meteor.webp')
-  --explosion-gif: url('assets/images/explosion.webp')
+:root {
+  --meteor-img: url('assets/images/meteor.webp');
+  --explosion-img: url('assets/images/explosion.webp');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
@@ -48,8 +48,16 @@ aside {
 @keyframes crash {
   0% {
     translate: -100vw;
+    background-image: var(--meteor-img);
+  }
+  49% {
+    background-image: var(--meteor-img);
   }
   50% {
     translate: 0;
+    background-image: var(--explosion-img);
+  }
+  60% { 
+    background-image: var(--explosion-img);
   }
 }
