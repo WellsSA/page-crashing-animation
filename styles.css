@@ -57,7 +57,7 @@ aside {
     translate: 0;
     background-image: var(--explosion-img);
   }
-  60% { 
+  100% { 
     background-image: var(--explosion-img);
   }
 }
