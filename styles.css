@@ -1,3 +1,8 @@
+#root {
+  --meteor-img: url('assets/images/meteor.webp')
+  --explosion-gif: url('assets/images/explosion.webp')
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 body {
@@ -27,4 +32,24 @@ aside {
   grid-column: 2;
   background: #333;
   padding: 1rem;
+}
+
+#boom {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  width: 200px;
+  height: 200px;
+  background-image: var(--meteor-img);
+  background-size: cover;
+  animation: crash 6s linear;
+}
+
+@keyframes crash {
+  0% {
+    translate: -100vw;
+  }
+  50% {
+    translate: 0;
+  }
 }
